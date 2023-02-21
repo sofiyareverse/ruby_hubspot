@@ -1,0 +1,75 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://api.hubapi.com/contacts/v1/contact/createOrUpdate/email/jordy@corkery.com
+    body:
+      encoding: UTF-8
+      string: '{"properties":[{"property":"first_name","value":"jordy"}]}'
+    headers:
+      Authorization:
+      - Bearer demo
+      Content-Type:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 400
+      message: Bad Request
+    headers:
+      Date:
+      - Tue, 21 Feb 2023 12:37:53 GMT
+      Content-Type:
+      - application/json;charset=utf-8
+      Content-Length:
+      - '259'
+      Connection:
+      - keep-alive
+      Cf-Ray:
+      - 79cf89326a8df2ac-WAW
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains; preload
+      Vary:
+      - origin, Accept-Encoding
+      Cf-Cache-Status:
+      - DYNAMIC
+      Access-Control-Allow-Credentials:
+      - 'false'
+      X-Hubspot-Correlation-Id:
+      - a1b9cca1-003a-4c82-8cc9-8ee136987f8b
+      X-Hubspot-Ratelimit-Daily:
+      - '500000'
+      X-Hubspot-Ratelimit-Daily-Remaining:
+      - '499891'
+      X-Hubspot-Ratelimit-Interval-Milliseconds:
+      - '10000'
+      X-Hubspot-Ratelimit-Max:
+      - '150'
+      X-Hubspot-Ratelimit-Remaining:
+      - '145'
+      X-Hubspot-Ratelimit-Secondly:
+      - '15'
+      X-Hubspot-Ratelimit-Secondly-Remaining:
+      - '14'
+      X-Trace:
+      - 2B522016187E20457935F6F16DEDFA54323A1BC43D000000000000000000
+      Report-To:
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=23e9TecMPS5DHpZIMp5iJtiiZfSm4D5qmme9BRF2%2F1SkJ56vULXNA2Y5VaQJ0kCoQ5bKCv6ELWFVHMmxbBFi20Y7SQhdTWSr59RyzIjMNW94MctLXDnE%2BHqucZAyK2xP"}],"group":"cf-nel","max_age":604800}'
+      Nel:
+      - '{"success_fraction":0.01,"report_to":"cf-nel","max_age":604800}'
+      Server:
+      - cloudflare
+      Alt-Svc:
+      - h3=":443"; ma=86400, h3-29=":443"; ma=86400
+    body:
+      encoding: UTF-8
+      string: '{"validationResults":[{"isValid":false,"message":"Property \"first_name\"
+        does not exist","error":"PROPERTY_DOESNT_EXIST","name":"first_name"}],"status":"error","message":"Property
+        values were not valid","correlationId":"a1b9cca1-003a-4c82-8cc9-8ee136987f8b"}'
+  recorded_at: Tue, 21 Feb 2023 12:37:53 GMT
+recorded_with: VCR 6.1.0

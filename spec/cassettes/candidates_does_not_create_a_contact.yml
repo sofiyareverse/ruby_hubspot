@@ -1,0 +1,75 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://api.hubapi.com/contacts/v1/contact/createOrUpdate/email/test@test.com
+    body:
+      encoding: UTF-8
+      string: '{"properties":[{"property":"email","value":"jordy@corkery.com"}]}'
+    headers:
+      Authorization:
+      - Bearer demo
+      Content-Type:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 409
+      message: Conflict
+    headers:
+      Date:
+      - Tue, 21 Feb 2023 12:37:53 GMT
+      Content-Type:
+      - application/json;charset=utf-8
+      Content-Length:
+      - '631'
+      Connection:
+      - keep-alive
+      Cf-Ray:
+      - 79cf8930ae4c3bc0-WAW
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains; preload
+      Vary:
+      - origin, Accept-Encoding
+      Cf-Cache-Status:
+      - DYNAMIC
+      Access-Control-Allow-Credentials:
+      - 'false'
+      X-Hubspot-Correlation-Id:
+      - b199ecab-ad7a-472e-90be-099348db42d0
+      X-Hubspot-Ratelimit-Daily:
+      - '500000'
+      X-Hubspot-Ratelimit-Daily-Remaining:
+      - '499892'
+      X-Hubspot-Ratelimit-Interval-Milliseconds:
+      - '10000'
+      X-Hubspot-Ratelimit-Max:
+      - '150'
+      X-Hubspot-Ratelimit-Remaining:
+      - '146'
+      X-Hubspot-Ratelimit-Secondly:
+      - '15'
+      X-Hubspot-Ratelimit-Secondly-Remaining:
+      - '14'
+      X-Trace:
+      - 2BA5114C05863801529E6027F09BA549D385EA579C000000000000000000
+      Report-To:
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=xOLgWrTEwmHVm0cGz1dZ0x1piMBDfQPd7O90Iz3IQt13lIbRTgJO1NAbxl0EfT16PeurttVUIxGGR%2FWWHWw3%2BqjJ7G7m4KDVE7gGX2eMV9UD4Cb6kUhPTWkP3R1m0cmW"}],"group":"cf-nel","max_age":604800}'
+      Nel:
+      - '{"success_fraction":0.01,"report_to":"cf-nel","max_age":604800}'
+      Server:
+      - cloudflare
+      Alt-Svc:
+      - h3=":443"; ma=86400, h3-29=":443"; ma=86400
+    body:
+      encoding: UTF-8
+      string: '{"message":"A contact with the email ''jordy@corkery.com'' already
+        exists. Existing ID: 9052","identityProfile":{"vid":9052,"identity":[{"value":"94ed6b6a-d998-410e-92ec-b2747ff81a05","type":"LEAD_GUID","timestamp":1676035095841},{"value":"jordy@corkery.com","type":"EMAIL","timestamp":1676979362027,"isPrimary":true}],"linkedVid":[],"isContact":true,"savedAtTimestamp":1676979362093},"errors":[{"message":"A
+        contact with email jordy@corkery.com already exists. Existing ID: %d [9052]","in":"email"}],"status":"error","correlationId":"b199ecab-ad7a-472e-90be-099348db42d0","category":"OBJECT_ALREADY_EXISTS","error":"CONTACT_EXISTS"}'
+  recorded_at: Tue, 21 Feb 2023 12:37:53 GMT
+recorded_with: VCR 6.1.0

@@ -1,0 +1,73 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://api.hubapi.com/contacts/v1/contact/createOrUpdate/email/jordy@corkery.com
+    body:
+      encoding: UTF-8
+      string: '{"properties":[{"property":"firstname","value":"jordy"}]}'
+    headers:
+      Authorization:
+      - Bearer demo
+      Content-Type:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 21 Feb 2023 12:37:52 GMT
+      Content-Type:
+      - application/json;charset=utf-8
+      Content-Length:
+      - '26'
+      Connection:
+      - keep-alive
+      Cf-Ray:
+      - 79cf892d3ad4351b-WAW
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains; preload
+      Vary:
+      - origin, Accept-Encoding
+      Cf-Cache-Status:
+      - DYNAMIC
+      Access-Control-Allow-Credentials:
+      - 'false'
+      X-Hubspot-Correlation-Id:
+      - e84652fd-5ac4-474b-8f1e-32e5391802c8
+      X-Hubspot-Ratelimit-Daily:
+      - '500000'
+      X-Hubspot-Ratelimit-Daily-Remaining:
+      - '499894'
+      X-Hubspot-Ratelimit-Interval-Milliseconds:
+      - '10000'
+      X-Hubspot-Ratelimit-Max:
+      - '150'
+      X-Hubspot-Ratelimit-Remaining:
+      - '148'
+      X-Hubspot-Ratelimit-Secondly:
+      - '15'
+      X-Hubspot-Ratelimit-Secondly-Remaining:
+      - '14'
+      X-Trace:
+      - 2B47EB3998F19CBF0F8A322A2560F925AF895DC2B8000000000000000000
+      Report-To:
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=42%2Bw0dua9PFHjIQbaKwUH%2B3d9n7uEgrcSxenRWHXtRf0AQv3%2BZZtgHEInlBAPn6y3fizy2CU6hsw9H8QtzIsC4LOo86N32w4r3n86JzPgt2OqdLKNja6%2B5TWNCY4zrZq"}],"group":"cf-nel","max_age":604800}'
+      Nel:
+      - '{"success_fraction":0.01,"report_to":"cf-nel","max_age":604800}'
+      Server:
+      - cloudflare
+      Alt-Svc:
+      - h3=":443"; ma=86400, h3-29=":443"; ma=86400
+    body:
+      encoding: UTF-8
+      string: '{"vid":9052,"isNew":false}'
+  recorded_at: Tue, 21 Feb 2023 12:37:52 GMT
+recorded_with: VCR 6.1.0
