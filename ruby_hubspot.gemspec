@@ -3,13 +3,16 @@
 require_relative 'lib/ruby_hubspot/version'
 
 Gem::Specification.new do |spec|
-  spec.name     = 'ruby_hubspot'
-  spec.version  = RubyHubspot::VERSION
-  spec.authors  = ['sofiyareverse']
-  spec.homepage = 'https://github.com/sofiyareverse/ruby_hubspot'
-
-  spec.summary = 'hubspot-ruby is a wrapper for the HubSpot REST API'
+  spec.name                  = 'ruby_hubspot'
+  spec.version               = RubyHubspot::VERSION
+  spec.authors               = ['sofiyareverse']
+  spec.homepage              = 'https://github.com/sofiyareverse/ruby_hubspot'
+  spec.require_paths         = ['lib']
+  spec.files                 = ['lib/ruby_hubspot.rb']
+  spec.files                += Dir['lib/**/*.rb']
+  spec.licenses              = ['MIT']
   spec.required_ruby_version = '>= 2.7'
+  spec.summary               = 'hubspot-ruby is a wrapper for the HubSpot REST API'
 
   # Add runtime dependencies here
   spec.add_runtime_dependency 'faraday'
