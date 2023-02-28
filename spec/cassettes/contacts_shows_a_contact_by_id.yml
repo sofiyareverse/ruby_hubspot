@@ -1,0 +1,75 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.hubapi.com/contacts/v1/contact/vid/9351/profile
+    body:
+      encoding: UTF-8
+      string: '{"properties":[]}'
+    headers:
+      Authorization:
+      - Bearer demo
+      Content-Type:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 27 Feb 2023 14:18:56 GMT
+      Content-Type:
+      - application/json;charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Cf-Ray:
+      - 7a018d744b2c35ac-WAW
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains; preload
+      Vary:
+      - origin, Accept-Encoding
+      Cf-Cache-Status:
+      - DYNAMIC
+      Access-Control-Allow-Credentials:
+      - 'false'
+      X-Hubspot-Correlation-Id:
+      - 1483e331-b5aa-40ef-8c9d-476093eaecdc
+      X-Hubspot-Ratelimit-Daily:
+      - '500000'
+      X-Hubspot-Ratelimit-Daily-Remaining:
+      - '499970'
+      X-Hubspot-Ratelimit-Interval-Milliseconds:
+      - '10000'
+      X-Hubspot-Ratelimit-Max:
+      - '150'
+      X-Hubspot-Ratelimit-Remaining:
+      - '148'
+      X-Hubspot-Ratelimit-Secondly:
+      - '15'
+      X-Hubspot-Ratelimit-Secondly-Remaining:
+      - '14'
+      X-Trace:
+      - 2BF09B6AE8213C35FF25E62348731249E21A136075000000000000000000
+      Report-To:
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=hs6fvWeRtWuuwoC7WLXO%2FQBj%2FIRCihsArnjS9mxBoH7ZctUGwoFXYaqx1EtgVOzJaXAkiTNRXLzavxODLCom5bmILTaQikdhMsVLRwHeY%2BeEfMw2IzHSk12Qg4CKiAh3"}],"group":"cf-nel","max_age":604800}'
+      Nel:
+      - '{"success_fraction":0.01,"report_to":"cf-nel","max_age":604800}'
+      Server:
+      - cloudflare
+      Alt-Svc:
+      - h3=":443"; ma=86400, h3-29=":443"; ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: '{"vid":9351,"canonical-vid":9351,"merged-vids":[],"portal-id":26860844,"is-contact":true,"properties":{"hs_latest_source_data_2":{"value":"1387894","versions":[{"value":"1387894","source-type":"ANALYTICS","source-id":"ContactAnalyticsDetailsUpdateWorker","source-label":null,"updated-by-user-id":null,"timestamp":1677499629297,"selected":false}]},"hs_latest_source_data_1":{"value":"INTEGRATION","versions":[{"value":"INTEGRATION","source-type":"ANALYTICS","source-id":"ContactAnalyticsDetailsUpdateWorker","source-label":null,"updated-by-user-id":null,"timestamp":1677499629297,"selected":false}]},"hs_is_unworked":{"value":"true","versions":[{"value":"true","source-type":"CALCULATED","source-id":"CalculatedPropertyComputer","source-label":null,"updated-by-user-id":null,"timestamp":1677499622140,"selected":false}]},"num_unique_conversion_events":{"value":"0","versions":[{"value":"0","source-type":"MERGE_CONTACTS","source-id":null,"source-label":null,"updated-by-user-id":null,"timestamp":1677499622471,"selected":false}]},"hs_latest_source":{"value":"OFFLINE","versions":[{"value":"OFFLINE","source-type":"ANALYTICS","source-id":"ContactAnalyticsDetailsUpdateWorker","source-label":null,"updated-by-user-id":null,"timestamp":1677499629297,"selected":false}]},"hs_pipeline":{"value":"contacts-lifecycle-pipeline","versions":[{"value":"contacts-lifecycle-pipeline","source-type":"INTEGRATION","source-id":"1387894","source-label":null,"updated-by-user-id":null,"timestamp":1677499622140,"selected":false}]},"hs_analytics_revenue":{"value":"0.0","versions":[{"value":"0.0","source-type":"ANALYTICS","source-id":"ContactAnalyticsDetailsUpdateWorker","source-label":null,"updated-by-user-id":null,"timestamp":1677499629297,"selected":false}]},"hs_social_num_broadcast_clicks":{"value":"0","versions":[{"value":"0","source-type":"ANALYTICS","source-id":"ContactAnalyticsDetailsUpdateWorker","source-label":null,"updated-by-user-id":null,"timestamp":1677499629297,"selected":false}]},"createdate":{"value":"1677499622140","versions":[{"value":"1677499622140","source-type":"INTEGRATION","source-id":"1387894","source-label":null,"updated-by-user-id":null,"timestamp":1677499622140,"selected":false}]},"hs_analytics_num_visits":{"value":"0","versions":[{"value":"0","source-type":"ANALYTICS","source-id":"ContactAnalyticsDetailsUpdateWorker","source-label":null,"updated-by-user-id":null,"timestamp":1677499629297,"selected":false}]},"hs_sequences_actively_enrolled_count":{"value":"0","versions":[{"value":"0","source-type":"CALCULATED","source-id":"RollupProperties","source-label":null,"updated-by-user-id":null,"timestamp":1677499623176,"selected":false}]},"hs_social_linkedin_clicks":{"value":"0","versions":[{"value":"0","source-type":"ANALYTICS","source-id":"ContactAnalyticsDetailsUpdateWorker","source-label":null,"updated-by-user-id":null,"timestamp":1677499629297,"selected":false}]},"hs_marketable_until_renewal":{"value":"false","versions":[{"value":"false","source-type":"INTEGRATION","source-id":"1387894","source-label":null,"updated-by-user-id":null,"timestamp":1677499622140,"selected":false}]},"hs_marketable_status":{"value":"false","versions":[{"value":"false","source-type":"INTEGRATION","source-id":"1387894","source-label":null,"updated-by-user-id":null,"timestamp":1677499622140,"selected":false}]},"hs_analytics_source":{"value":"OFFLINE","versions":[{"value":"OFFLINE","source-type":"ANALYTICS","source-id":"ContactAnalyticsDetailsUpdateWorker","source-label":null,"updated-by-user-id":null,"timestamp":1677499629297,"selected":false}]},"hs_email_domain":{"value":"gml.ru","versions":[{"value":"gml.ru","source-type":"CALCULATED","source-id":null,"source-label":null,"updated-by-user-id":null,"timestamp":1677499622140,"selected":false}]},"hs_analytics_num_page_views":{"value":"0","versions":[{"value":"0","source-type":"ANALYTICS","source-id":"ContactAnalyticsDetailsUpdateWorker","source-label":null,"updated-by-user-id":null,"timestamp":1677499629297,"selected":false}]},"email":{"value":"sof@gml.ru","versions":[{"value":"sof@gml.ru","source-type":"INTEGRATION","source-id":"1387894","source-label":null,"updated-by-user-id":null,"timestamp":1677499622140,"selected":false}]},"hs_latest_source_timestamp":{"value":"1677499622197","versions":[{"value":"1677499622197","source-type":"ANALYTICS","source-id":"ContactAnalyticsDetailsUpdateWorker","source-label":null,"updated-by-user-id":null,"timestamp":1677499629297,"selected":false}]},"lastmodifieddate":{"value":"1677499643673","versions":[{"value":"1677499643673","source-type":"AI_GROUP","source-id":null,"source-label":null,"updated-by-user-id":null,"timestamp":1677499643673,"selected":false},{"value":"1677499629297","source-type":"API","source-id":null,"source-label":null,"updated-by-user-id":null,"timestamp":1677499629297,"selected":false},{"value":"1677499623184","source-type":"API","source-id":null,"source-label":null,"updated-by-user-id":null,"timestamp":1677499623184,"selected":false},{"value":"1677499622140","source-type":"INTEGRATION","source-id":"1387894","source-label":null,"updated-by-user-id":null,"timestamp":1677499622140,"selected":false}]},"hs_analytics_first_timestamp":{"value":"1677499622140","versions":[{"value":"1677499622140","source-type":"ANALYTICS","source-id":"ContactAnalyticsDetailsUpdateWorker","source-label":null,"updated-by-user-id":null,"timestamp":1677499629297,"selected":false}]},"hs_social_google_plus_clicks":{"value":"0","versions":[{"value":"0","source-type":"ANALYTICS","source-id":"ContactAnalyticsDetailsUpdateWorker","source-label":null,"updated-by-user-id":null,"timestamp":1677499629297,"selected":false}]},"hs_analytics_average_page_views":{"value":"0","versions":[{"value":"0","source-type":"ANALYTICS","source-id":"ContactAnalyticsDetailsUpdateWorker","source-label":null,"updated-by-user-id":null,"timestamp":1677499629297,"selected":false}]},"hs_all_contact_vids":{"value":"9351","versions":[{"value":"9351","source-type":"INTEGRATION","source-id":"1387894","source-label":null,"updated-by-user-id":null,"timestamp":1677499622140,"selected":false}]},"hs_social_facebook_clicks":{"value":"0","versions":[{"value":"0","source-type":"ANALYTICS","source-id":"ContactAnalyticsDetailsUpdateWorker","source-label":null,"updated-by-user-id":null,"timestamp":1677499629297,"selected":false}]},"hs_predictivescoringtier":{"value":"tier_4","versions":[{"value":"tier_4","source-type":"CALCULATED","source-id":null,"source-label":"HubSpot
+        Predictive Contact Scoring Model","updated-by-user-id":null,"timestamp":1677499642790,"selected":false}]},"hs_predictivecontactscore_v2":{"value":"2.48","versions":[{"value":"2.48","source-type":"CALCULATED","source-id":null,"source-label":"HubSpot
+        Predictive Contact Scoring Model","updated-by-user-id":null,"timestamp":1677499642790,"selected":false}]},"hs_is_contact":{"value":"true","versions":[{"value":"true","source-type":"CALCULATED","source-id":null,"source-label":null,"updated-by-user-id":null,"timestamp":1677499622140,"selected":false}]},"num_conversion_events":{"value":"0","versions":[{"value":"0","source-type":"MERGE_CONTACTS","source-id":null,"source-label":null,"updated-by-user-id":null,"timestamp":1677499622471,"selected":false}]},"hs_object_id":{"value":"9351","versions":[{"value":"9351","source-type":"INTEGRATION","source-id":"1387894","source-label":null,"updated-by-user-id":null,"timestamp":1677499622140,"selected":false}]},"hs_analytics_num_event_completions":{"value":"0","versions":[{"value":"0","source-type":"ANALYTICS","source-id":"ContactAnalyticsDetailsUpdateWorker","source-label":null,"updated-by-user-id":null,"timestamp":1677499629297,"selected":false}]},"hs_social_twitter_clicks":{"value":"0","versions":[{"value":"0","source-type":"ANALYTICS","source-id":"ContactAnalyticsDetailsUpdateWorker","source-label":null,"updated-by-user-id":null,"timestamp":1677499629297,"selected":false}]},"hs_analytics_source_data_2":{"value":"1387894","versions":[{"value":"1387894","source-type":"ANALYTICS","source-id":"ContactAnalyticsDetailsUpdateWorker","source-label":null,"updated-by-user-id":null,"timestamp":1677499629297,"selected":false}]},"hs_lifecyclestage_lead_date":{"value":"1677499622140","versions":[{"value":"1677499622140","source-type":"INTEGRATION","source-id":"1387894","source-label":null,"updated-by-user-id":null,"timestamp":1677499622140,"selected":false}]},"hs_analytics_source_data_1":{"value":"INTEGRATION","versions":[{"value":"INTEGRATION","source-type":"ANALYTICS","source-id":"ContactAnalyticsDetailsUpdateWorker","source-label":null,"updated-by-user-id":null,"timestamp":1677499629297,"selected":false}]},"lifecyclestage":{"value":"lead","versions":[{"value":"lead","source-type":"INTEGRATION","source-id":"1387894","source-label":null,"updated-by-user-id":null,"timestamp":1677499622140,"selected":false}]}},"form-submissions":[],"list-memberships":[],"identity-profiles":[{"vid":9351,"saved-at-timestamp":1677499622197,"deleted-changed-timestamp":0,"identities":[{"type":"EMAIL","value":"sof@gml.ru","timestamp":1677499622140,"is-primary":true},{"type":"LEAD_GUID","value":"c3d2ce26-730e-4290-9254-65afef6a06a2","timestamp":1677499622193}]}],"merge-audits":[]}'
+  recorded_at: Mon, 27 Feb 2023 14:18:56 GMT
+recorded_with: VCR 6.1.0

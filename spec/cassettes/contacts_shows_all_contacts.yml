@@ -1,0 +1,73 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.hubapi.com/crm/v4/objects/contacts
+    body:
+      encoding: UTF-8
+      string: '{"properties":[]}'
+    headers:
+      Authorization:
+      - Bearer demo
+      Content-Type:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 27 Feb 2023 12:23:11 GMT
+      Content-Type:
+      - application/json;charset=utf-8
+      Content-Length:
+      - '704'
+      Connection:
+      - keep-alive
+      Cf-Ray:
+      - 7a00e3e4caefbf3a-WAW
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains; preload
+      Vary:
+      - origin, Accept-Encoding
+      Cf-Cache-Status:
+      - DYNAMIC
+      Access-Control-Allow-Credentials:
+      - 'false'
+      X-Hubspot-Correlation-Id:
+      - 1a9acedd-2542-435b-8556-63f948ae782f
+      X-Hubspot-Ratelimit-Daily:
+      - '500000'
+      X-Hubspot-Ratelimit-Daily-Remaining:
+      - '499979'
+      X-Hubspot-Ratelimit-Interval-Milliseconds:
+      - '10000'
+      X-Hubspot-Ratelimit-Max:
+      - '150'
+      X-Hubspot-Ratelimit-Remaining:
+      - '149'
+      X-Hubspot-Ratelimit-Secondly:
+      - '15'
+      X-Hubspot-Ratelimit-Secondly-Remaining:
+      - '14'
+      X-Trace:
+      - 2B937869AF02E4723C8C56FD9FAC6DE1CD55DB7748000000000000000000
+      Report-To:
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=kwmdgaWd8UG5NP8pFHXEIyFxnOO%2FU4YjjkK5qPm5L6jVGry%2BV7c06YdzjuhyWwVlkqygKK%2F%2BlHHZpGn8t06B66eRSwAhBax1rsLhyYG6rpz%2Fsqu0N5K1FvH6EbCjVBhk"}],"group":"cf-nel","max_age":604800}'
+      Nel:
+      - '{"success_fraction":0.01,"report_to":"cf-nel","max_age":604800}'
+      Server:
+      - cloudflare
+      Alt-Svc:
+      - h3=":443"; ma=86400, h3-29=":443"; ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: '{"results":[{"id":"6651","properties":{"createdate":"2023-01-30T16:49:01.858Z","email":"viola@rippin.io","firstname":"Sofiiya","hs_object_id":"6651","lastmodifieddate":"2023-02-23T06:20:12.721Z","lastname":"Yurova"},"createdAt":"2023-01-30T16:49:01.858Z","updatedAt":"2023-02-23T06:20:12.721Z","archived":false},{"id":"6652","properties":{"createdate":"2023-01-30T16:49:01.903Z","email":"admin333@leobit.com","firstname":"Sofiiya","hs_object_id":"6652","lastmodifieddate":"2023-02-23T06:20:45.864Z","lastname":"Yurova"},"createdAt":"2023-01-30T16:49:01.903Z","updatedAt":"2023-02-23T06:20:45.864Z","archived":false},{"id":"6701","properties":{"createdate":"2023-01-30T17:15:33.727Z","email":"drake@connelly.net","firstname":"Junius","hs_object_id":"6701","lastmodifieddate":"2023-02-23T06:19:20.153Z","lastname":"Gutkowski"},"createdAt":"2023-01-30T17:15:33.727Z","updatedAt":"2023-02-23T06:19:20.153Z","archived":false},{"id":"6751","properties":{"createdate":"2023-01-30T17:17:05.368Z","email":"ali@shanahan.com","firstname":"Sofiiya","hs_object_id":"6751","lastmodifieddate":"2023-02-23T06:20:25.125Z","lastname":"Yurova"},"createdAt":"2023-01-30T17:17:05.368Z","updatedAt":"2023-02-23T06:20:25.125Z","archived":false},{"id":"6801","properties":{"createdate":"2023-01-31T12:49:25.199Z","email":"bodiatym12345@gmail.com","firstname":"Test","hs_object_id":"6801","lastmodifieddate":"2023-02-23T06:21:17.025Z","lastname":"Test"},"createdAt":"2023-01-31T12:49:25.199Z","updatedAt":"2023-02-23T06:21:17.025Z","archived":false},{"id":"6851","properties":{"createdate":"2023-01-31T13:05:25.289Z","email":"bodiatym12test@gmail.com","firstname":"Bogdan","hs_object_id":"6851","lastmodifieddate":"2023-02-23T06:21:02.001Z","lastname":"Test"},"createdAt":"2023-01-31T13:05:25.289Z","updatedAt":"2023-02-23T06:21:02.001Z","archived":false},{"id":"6901","properties":{"createdate":"2023-01-31T13:43:42.444Z","email":"viponmaster1234@gmail.com","firstname":"Vipon","hs_object_id":"6901","lastmodifieddate":"2023-02-23T06:18:37.066Z","lastname":"Mastermind"},"createdAt":"2023-01-31T13:43:42.444Z","updatedAt":"2023-02-23T06:18:37.066Z","archived":false},{"id":"6951","properties":{"createdate":"2023-01-31T16:00:39.232Z","email":"admin1132213132@leobit.com","firstname":"Sofiiya","hs_object_id":"6951","lastmodifieddate":"2023-02-23T06:21:11.180Z","lastname":"Yurova"},"createdAt":"2023-01-31T16:00:39.232Z","updatedAt":"2023-02-23T06:21:11.180Z","archived":false},{"id":"7001","properties":{"createdate":"2023-01-31T19:56:51.444Z","email":"admidasdan@leobit.com","firstname":"Testtest","hs_object_id":"7001","lastmodifieddate":"2023-02-23T06:20:45.860Z","lastname":"Yurova"},"createdAt":"2023-01-31T19:56:51.444Z","updatedAt":"2023-02-23T06:20:45.860Z","archived":false},{"id":"7002","properties":{"createdate":"2023-01-31T19:56:51.444Z","email":"admindssdds@leobit.com","firstname":"Sofiiya","hs_object_id":"7002","lastmodifieddate":"2023-02-23T06:18:37.455Z","lastname":"Yurova"},"createdAt":"2023-01-31T19:56:51.444Z","updatedAt":"2023-02-23T06:18:37.455Z","archived":false}],"paging":{"next":{"after":"7003","link":"https://api.hubapi.com/crm/v4/objects/contacts?after=7003"}}}'
+  recorded_at: Mon, 27 Feb 2023 12:23:10 GMT
+recorded_with: VCR 6.1.0

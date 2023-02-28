@@ -1,0 +1,146 @@
+---
+http_interactions:
+- request:
+    method: delete
+    uri: https://api.hubapi.com/contacts/v1/contact/vid/9351
+    body:
+      encoding: UTF-8
+      string: '{"properties":[]}'
+    headers:
+      Authorization:
+      - Bearer demo
+      Content-Type:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 28 Feb 2023 14:53:16 GMT
+      Content-Type:
+      - application/json;charset=utf-8
+      Content-Length:
+      - '41'
+      Connection:
+      - keep-alive
+      Cf-Ray:
+      - 7a09fd23db0c350a-WAW
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains; preload
+      Vary:
+      - origin, Accept-Encoding
+      Cf-Cache-Status:
+      - DYNAMIC
+      Access-Control-Allow-Credentials:
+      - 'false'
+      X-Hubspot-Correlation-Id:
+      - 9ea1a244-0243-4aa5-9d50-a541c14946e3
+      X-Hubspot-Ratelimit-Daily:
+      - '500000'
+      X-Hubspot-Ratelimit-Daily-Remaining:
+      - '499960'
+      X-Hubspot-Ratelimit-Interval-Milliseconds:
+      - '10000'
+      X-Hubspot-Ratelimit-Max:
+      - '150'
+      X-Hubspot-Ratelimit-Remaining:
+      - '149'
+      X-Hubspot-Ratelimit-Secondly:
+      - '15'
+      X-Hubspot-Ratelimit-Secondly-Remaining:
+      - '14'
+      X-Trace:
+      - 2B57BEB6147FD31660EC66BE44ECEFDD08B1871481000000000000000000
+      Report-To:
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=Zg849NSJCVMOXwau4hDij7noNfoV8jQ%2FylDc1SPxiV4xU31%2FVFpjyyl1Md26uOadfFjvp0dJPmdUszm%2BXakmwlRvOFZ5DLSIpXESla1Vu%2Bi3FLTSDFZswSTPzs63lsBA"}],"group":"cf-nel","max_age":604800}'
+      Nel:
+      - '{"success_fraction":0.01,"report_to":"cf-nel","max_age":604800}'
+      Server:
+      - cloudflare
+      Alt-Svc:
+      - h3=":443"; ma=86400, h3-29=":443"; ma=86400
+    body:
+      encoding: UTF-8
+      string: '{"vid":9351,"deleted":true,"reason":"OK"}'
+  recorded_at: Tue, 28 Feb 2023 14:53:16 GMT
+- request:
+    method: delete
+    uri: https://api.hubapi.com/contacts/v1/contact/vid/9351
+    body:
+      encoding: UTF-8
+      string: '{"properties":[]}'
+    headers:
+      Authorization:
+      - Bearer demo
+      Content-Type:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Date:
+      - Tue, 28 Feb 2023 14:53:28 GMT
+      Content-Type:
+      - application/json;charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Cf-Ray:
+      - 7a09fd6b1b580054-WAW
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains; preload
+      Vary:
+      - origin, Accept-Encoding
+      Cf-Cache-Status:
+      - DYNAMIC
+      Access-Control-Allow-Credentials:
+      - 'false'
+      X-Hubspot-Correlation-Id:
+      - d939c92c-8ca8-4e8b-ab0a-2c3ba2c160c4
+      X-Hubspot-Notfound:
+      - 'true'
+      X-Hubspot-Ratelimit-Daily:
+      - '500000'
+      X-Hubspot-Ratelimit-Daily-Remaining:
+      - '499959'
+      X-Hubspot-Ratelimit-Interval-Milliseconds:
+      - '10000'
+      X-Hubspot-Ratelimit-Max:
+      - '150'
+      X-Hubspot-Ratelimit-Remaining:
+      - '149'
+      X-Hubspot-Ratelimit-Secondly:
+      - '15'
+      X-Hubspot-Ratelimit-Secondly-Remaining:
+      - '14'
+      X-Trace:
+      - 2BC1D8B46711657F3C06C39FD05253A2FCB4BE4C2E000000000000000000
+      Report-To:
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=83d6EoeyowDkajp3WeITunrFWb6sZvO0pO9vgN8g2VUmXLpAVENb4Y7eQn99koNmEU5%2FGx9sGAh5VBaPknFFFQU3B%2B0N71VW6b%2BJKVdfhd4S4Mf4o9i4zcoxYQJiXoov"}],"group":"cf-nel","max_age":604800}'
+      Nel:
+      - '{"success_fraction":0.01,"report_to":"cf-nel","max_age":604800}'
+      Server:
+      - cloudflare
+      Alt-Svc:
+      - h3=":443"; ma=86400, h3-29=":443"; ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: '{"status":"error","message":"resource not found","correlationId":"d939c92c-8ca8-4e8b-ab0a-2c3ba2c160c4","errors":[{"message":"The
+        contact 9351 does not exist."}],"category":"OBJECT_NOT_FOUND"}'
+  recorded_at: Tue, 28 Feb 2023 14:53:28 GMT
+recorded_with: VCR 6.1.0

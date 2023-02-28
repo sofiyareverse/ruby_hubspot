@@ -1,0 +1,76 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.hubapi.com/contacts/v1/contact/email/test@test.co/profile
+    body:
+      encoding: UTF-8
+      string: '{"properties":[]}'
+    headers:
+      Authorization:
+      - Bearer demo
+      Content-Type:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 27 Feb 2023 14:18:55 GMT
+      Content-Type:
+      - application/json;charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Cf-Ray:
+      - 7a018d719ee5f2b8-WAW
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains; preload
+      Vary:
+      - origin, Accept-Encoding
+      Cf-Cache-Status:
+      - DYNAMIC
+      Access-Control-Allow-Credentials:
+      - 'false'
+      X-Hubspot-Correlation-Id:
+      - 99feb87b-aeec-4f25-9060-bb850439a84f
+      X-Hubspot-Ratelimit-Daily:
+      - '500000'
+      X-Hubspot-Ratelimit-Daily-Remaining:
+      - '499971'
+      X-Hubspot-Ratelimit-Interval-Milliseconds:
+      - '10000'
+      X-Hubspot-Ratelimit-Max:
+      - '150'
+      X-Hubspot-Ratelimit-Remaining:
+      - '149'
+      X-Hubspot-Ratelimit-Secondly:
+      - '15'
+      X-Hubspot-Ratelimit-Secondly-Remaining:
+      - '14'
+      X-Trace:
+      - 2BFD6656F8A319E3FA61536455AFF424584E6B929B000000000000000000
+      Report-To:
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=tg4tzH7xWoC2AODns0Ja48dB1Nn9ofZmQBa5Zuvk9T%2F7qex0UfuLKF8ZjRaDStJrSa80lbmQBon5RNdPLqMl6MlG0cpWaASr3OL03bDGr%2FmhEgK7k%2B%2FFU5%2BY6Kg0OX5q"}],"group":"cf-nel","max_age":604800}'
+      Nel:
+      - '{"success_fraction":0.01,"report_to":"cf-nel","max_age":604800}'
+      Server:
+      - cloudflare
+      Alt-Svc:
+      - h3=":443"; ma=86400, h3-29=":443"; ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: '{"vid":9451,"canonical-vid":9451,"merged-vids":[],"portal-id":26860844,"is-contact":true,"properties":{"hs_latest_source_data_2":{"value":"1387894","versions":[{"value":"1387894","source-type":"ANALYTICS","source-id":"ContactAnalyticsDetailsUpdateWorker","source-label":null,"updated-by-user-id":null,"timestamp":1677500029231,"selected":false}]},"hs_latest_source_data_1":{"value":"INTEGRATION","versions":[{"value":"INTEGRATION","source-type":"ANALYTICS","source-id":"ContactAnalyticsDetailsUpdateWorker","source-label":null,"updated-by-user-id":null,"timestamp":1677500029231,"selected":false}]},"hs_is_unworked":{"value":"true","versions":[{"value":"true","source-type":"CALCULATED","source-id":"CalculatedPropertyComputer","source-label":null,"updated-by-user-id":null,"timestamp":1677500011692,"selected":false}]},"firstname":{"value":"test","versions":[{"value":"test","source-type":"INTEGRATION","source-id":"1387894","source-label":null,"updated-by-user-id":null,"timestamp":1677501707535,"selected":false}]},"num_unique_conversion_events":{"value":"0","versions":[{"value":"0","source-type":"MERGE_CONTACTS","source-id":null,"source-label":null,"updated-by-user-id":null,"timestamp":1677500012265,"selected":false}]},"hs_latest_source":{"value":"OFFLINE","versions":[{"value":"OFFLINE","source-type":"ANALYTICS","source-id":"ContactAnalyticsDetailsUpdateWorker","source-label":null,"updated-by-user-id":null,"timestamp":1677500029231,"selected":false}]},"hs_pipeline":{"value":"contacts-lifecycle-pipeline","versions":[{"value":"contacts-lifecycle-pipeline","source-type":"INTEGRATION","source-id":"1387894","source-label":null,"updated-by-user-id":null,"timestamp":1677500011692,"selected":false}]},"hs_analytics_revenue":{"value":"0.0","versions":[{"value":"0.0","source-type":"ANALYTICS","source-id":"ContactAnalyticsDetailsUpdateWorker","source-label":null,"updated-by-user-id":null,"timestamp":1677500029231,"selected":false}]},"hs_social_num_broadcast_clicks":{"value":"0","versions":[{"value":"0","source-type":"ANALYTICS","source-id":"ContactAnalyticsDetailsUpdateWorker","source-label":null,"updated-by-user-id":null,"timestamp":1677500029231,"selected":false}]},"createdate":{"value":"1677500011692","versions":[{"value":"1677500011692","source-type":"INTEGRATION","source-id":"1387894","source-label":null,"updated-by-user-id":null,"timestamp":1677500011692,"selected":false}]},"hs_analytics_num_visits":{"value":"0","versions":[{"value":"0","source-type":"ANALYTICS","source-id":"ContactAnalyticsDetailsUpdateWorker","source-label":null,"updated-by-user-id":null,"timestamp":1677500029231,"selected":false}]},"hs_sequences_actively_enrolled_count":{"value":"0","versions":[{"value":"0","source-type":"CALCULATED","source-id":"RollupProperties","source-label":null,"updated-by-user-id":null,"timestamp":1677500012468,"selected":false}]},"hs_social_linkedin_clicks":{"value":"0","versions":[{"value":"0","source-type":"ANALYTICS","source-id":"ContactAnalyticsDetailsUpdateWorker","source-label":null,"updated-by-user-id":null,"timestamp":1677500029231,"selected":false}]},"hs_marketable_until_renewal":{"value":"false","versions":[{"value":"false","source-type":"INTEGRATION","source-id":"1387894","source-label":null,"updated-by-user-id":null,"timestamp":1677500011692,"selected":false}]},"hs_marketable_status":{"value":"false","versions":[{"value":"false","source-type":"INTEGRATION","source-id":"1387894","source-label":null,"updated-by-user-id":null,"timestamp":1677500011692,"selected":false}]},"hs_analytics_source":{"value":"OFFLINE","versions":[{"value":"OFFLINE","source-type":"ANALYTICS","source-id":"ContactAnalyticsDetailsUpdateWorker","source-label":null,"updated-by-user-id":null,"timestamp":1677500029231,"selected":false}]},"hs_email_domain":{"value":"test.co","versions":[{"value":"test.co","source-type":"CALCULATED","source-id":null,"source-label":null,"updated-by-user-id":null,"timestamp":1677500011692,"selected":false}]},"hs_analytics_num_page_views":{"value":"0","versions":[{"value":"0","source-type":"ANALYTICS","source-id":"ContactAnalyticsDetailsUpdateWorker","source-label":null,"updated-by-user-id":null,"timestamp":1677500029231,"selected":false}]},"email":{"value":"test@test.co","versions":[{"value":"test@test.co","source-type":"INTEGRATION","source-id":"1387894","source-label":null,"updated-by-user-id":null,"timestamp":1677500011692,"selected":false}]},"hs_latest_source_timestamp":{"value":"1677500011746","versions":[{"value":"1677500011746","source-type":"ANALYTICS","source-id":"ContactAnalyticsDetailsUpdateWorker","source-label":null,"updated-by-user-id":null,"timestamp":1677500029231,"selected":false}]},"lastmodifieddate":{"value":"1677501707541","versions":[{"value":"1677501707541","source-type":"INTEGRATION","source-id":"1387894","source-label":null,"updated-by-user-id":null,"timestamp":1677501707541,"selected":false},{"value":"1677500070243","source-type":"AI_GROUP","source-id":null,"source-label":null,"updated-by-user-id":null,"timestamp":1677500070243,"selected":false},{"value":"1677500029231","source-type":"API","source-id":null,"source-label":null,"updated-by-user-id":null,"timestamp":1677500029231,"selected":false},{"value":"1677500029172","source-type":"AI_GROUP","source-id":null,"source-label":null,"updated-by-user-id":null,"timestamp":1677500029172,"selected":false},{"value":"1677500012479","source-type":"API","source-id":null,"source-label":null,"updated-by-user-id":null,"timestamp":1677500012479,"selected":false},{"value":"1677500011692","source-type":"INTEGRATION","source-id":"1387894","source-label":null,"updated-by-user-id":null,"timestamp":1677500011692,"selected":false}]},"hs_analytics_first_timestamp":{"value":"1677500011692","versions":[{"value":"1677500011692","source-type":"ANALYTICS","source-id":"ContactAnalyticsDetailsUpdateWorker","source-label":null,"updated-by-user-id":null,"timestamp":1677500029231,"selected":false}]},"hs_social_google_plus_clicks":{"value":"0","versions":[{"value":"0","source-type":"ANALYTICS","source-id":"ContactAnalyticsDetailsUpdateWorker","source-label":null,"updated-by-user-id":null,"timestamp":1677500029231,"selected":false}]},"hs_analytics_average_page_views":{"value":"0","versions":[{"value":"0","source-type":"ANALYTICS","source-id":"ContactAnalyticsDetailsUpdateWorker","source-label":null,"updated-by-user-id":null,"timestamp":1677500029231,"selected":false}]},"hs_all_contact_vids":{"value":"9451","versions":[{"value":"9451","source-type":"INTEGRATION","source-id":"1387894","source-label":null,"updated-by-user-id":null,"timestamp":1677500011692,"selected":false}]},"hs_social_facebook_clicks":{"value":"0","versions":[{"value":"0","source-type":"ANALYTICS","source-id":"ContactAnalyticsDetailsUpdateWorker","source-label":null,"updated-by-user-id":null,"timestamp":1677500029231,"selected":false}]},"hs_predictivescoringtier":{"value":"tier_1","versions":[{"value":"tier_1","source-type":"CALCULATED","source-id":null,"source-label":"HubSpot
+        Predictive Contact Scoring Model","updated-by-user-id":null,"timestamp":1677500028551,"selected":false}]},"hs_predictivecontactscore_v2":{"value":"3.59","versions":[{"value":"3.59","source-type":"CALCULATED","source-id":null,"source-label":"HubSpot
+        Predictive Contact Scoring Model","updated-by-user-id":null,"timestamp":1677500069307,"selected":false},{"value":"3.87","source-type":"CALCULATED","source-id":null,"source-label":"HubSpot
+        Predictive Contact Scoring Model","updated-by-user-id":null,"timestamp":1677500028551,"selected":false}]},"hs_is_contact":{"value":"true","versions":[{"value":"true","source-type":"CALCULATED","source-id":null,"source-label":null,"updated-by-user-id":null,"timestamp":1677500011692,"selected":false}]},"num_conversion_events":{"value":"0","versions":[{"value":"0","source-type":"MERGE_CONTACTS","source-id":null,"source-label":null,"updated-by-user-id":null,"timestamp":1677500012265,"selected":false}]},"hs_object_id":{"value":"9451","versions":[{"value":"9451","source-type":"INTEGRATION","source-id":"1387894","source-label":null,"updated-by-user-id":null,"timestamp":1677500011692,"selected":false}]},"hs_analytics_num_event_completions":{"value":"0","versions":[{"value":"0","source-type":"ANALYTICS","source-id":"ContactAnalyticsDetailsUpdateWorker","source-label":null,"updated-by-user-id":null,"timestamp":1677500029231,"selected":false}]},"hs_social_twitter_clicks":{"value":"0","versions":[{"value":"0","source-type":"ANALYTICS","source-id":"ContactAnalyticsDetailsUpdateWorker","source-label":null,"updated-by-user-id":null,"timestamp":1677500029231,"selected":false}]},"hs_analytics_source_data_2":{"value":"1387894","versions":[{"value":"1387894","source-type":"ANALYTICS","source-id":"ContactAnalyticsDetailsUpdateWorker","source-label":null,"updated-by-user-id":null,"timestamp":1677500029231,"selected":false}]},"hs_lifecyclestage_lead_date":{"value":"1677500011692","versions":[{"value":"1677500011692","source-type":"INTEGRATION","source-id":"1387894","source-label":null,"updated-by-user-id":null,"timestamp":1677500011692,"selected":false}]},"hs_analytics_source_data_1":{"value":"INTEGRATION","versions":[{"value":"INTEGRATION","source-type":"ANALYTICS","source-id":"ContactAnalyticsDetailsUpdateWorker","source-label":null,"updated-by-user-id":null,"timestamp":1677500029231,"selected":false}]},"lifecyclestage":{"value":"lead","versions":[{"value":"lead","source-type":"INTEGRATION","source-id":"1387894","source-label":null,"updated-by-user-id":null,"timestamp":1677500011692,"selected":false}]}},"form-submissions":[],"list-memberships":[],"identity-profiles":[{"vid":9451,"saved-at-timestamp":1677500011746,"deleted-changed-timestamp":0,"identities":[{"type":"EMAIL","value":"test@test.co","timestamp":1677500011692,"is-primary":true},{"type":"LEAD_GUID","value":"db7af5ad-4e78-4a5c-b570-e5f03813e2c7","timestamp":1677500011741}]}],"merge-audits":[]}'
+  recorded_at: Mon, 27 Feb 2023 14:18:55 GMT
+recorded_with: VCR 6.1.0

@@ -11,5 +11,13 @@ RSpec.describe ErrorHandler do
 
       expect { hubspot.request(:get, 'crm/v3/objects/contacts') }.to raise_error(ArgumentError)
     end
+
+    it 'returns error if there is no company id' do
+      expect { hubspot.show_company(id: nil) }.to raise_error(ArgumentError)
+    end
+
+    it 'returns error if there is no contact email' do
+      expect { hubspot.show_contact(email: nil) }.to raise_error(ArgumentError)
+    end
   end
 end

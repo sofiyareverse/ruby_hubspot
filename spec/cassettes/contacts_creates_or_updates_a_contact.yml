@@ -1,0 +1,73 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://api.hubapi.com/contacts/v1/contact/createOrUpdate/email/test@test.co
+    body:
+      encoding: UTF-8
+      string: '{"properties":[{"property":"email","value":"test@test.co"},{"property":"firstname","value":"test"}]}'
+    headers:
+      Authorization:
+      - Bearer demo
+      Content-Type:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 27 Feb 2023 12:41:47 GMT
+      Content-Type:
+      - application/json;charset=utf-8
+      Content-Length:
+      - '26'
+      Connection:
+      - keep-alive
+      Cf-Ray:
+      - 7a00ff27bd64348b-WAW
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains; preload
+      Vary:
+      - origin, Accept-Encoding
+      Cf-Cache-Status:
+      - DYNAMIC
+      Access-Control-Allow-Credentials:
+      - 'false'
+      X-Hubspot-Correlation-Id:
+      - 569d4877-9288-447c-bb6f-908a4aebe981
+      X-Hubspot-Ratelimit-Daily:
+      - '500000'
+      X-Hubspot-Ratelimit-Daily-Remaining:
+      - '499976'
+      X-Hubspot-Ratelimit-Interval-Milliseconds:
+      - '10000'
+      X-Hubspot-Ratelimit-Max:
+      - '150'
+      X-Hubspot-Ratelimit-Remaining:
+      - '149'
+      X-Hubspot-Ratelimit-Secondly:
+      - '15'
+      X-Hubspot-Ratelimit-Secondly-Remaining:
+      - '14'
+      X-Trace:
+      - 2BD08880D70057ACCB3D285357019D6C48B2F34EB3000000000000000000
+      Report-To:
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=tFyUmk8Nfaw4dkjlda%2By%2BFQC68ijIaFbBRry6q%2BTZXSz3mWf9TRXjarE1%2FbccBUXPJTWtjt%2BaXCZDfLqstlVpIWDRg0ioxz5KkiE4ica53B0ZK08vOAYue7adnVWKvaI"}],"group":"cf-nel","max_age":604800}'
+      Nel:
+      - '{"success_fraction":0.01,"report_to":"cf-nel","max_age":604800}'
+      Server:
+      - cloudflare
+      Alt-Svc:
+      - h3=":443"; ma=86400, h3-29=":443"; ma=86400
+    body:
+      encoding: UTF-8
+      string: '{"vid":9451,"isNew":false}'
+  recorded_at: Mon, 27 Feb 2023 12:41:47 GMT
+recorded_with: VCR 6.1.0

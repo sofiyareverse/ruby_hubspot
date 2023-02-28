@@ -1,0 +1,73 @@
+---
+http_interactions:
+- request:
+    method: delete
+    uri: https://api.hubapi.com/contacts/v1/contact/email/test@test.co
+    body:
+      encoding: UTF-8
+      string: '{"properties":[]}'
+    headers:
+      Authorization:
+      - Bearer demo
+      Content-Type:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 28 Feb 2023 14:26:30 GMT
+      Content-Type:
+      - application/json;charset=utf-8
+      Content-Length:
+      - '41'
+      Connection:
+      - keep-alive
+      Cf-Ray:
+      - 7a09d5ebe8ef3bb5-WAW
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains; preload
+      Vary:
+      - origin, Accept-Encoding
+      Cf-Cache-Status:
+      - DYNAMIC
+      Access-Control-Allow-Credentials:
+      - 'false'
+      X-Hubspot-Correlation-Id:
+      - 137603ed-4f50-4f57-8eef-bca6b9b94178
+      X-Hubspot-Ratelimit-Daily:
+      - '500000'
+      X-Hubspot-Ratelimit-Daily-Remaining:
+      - '499963'
+      X-Hubspot-Ratelimit-Interval-Milliseconds:
+      - '10000'
+      X-Hubspot-Ratelimit-Max:
+      - '150'
+      X-Hubspot-Ratelimit-Remaining:
+      - '149'
+      X-Hubspot-Ratelimit-Secondly:
+      - '15'
+      X-Hubspot-Ratelimit-Secondly-Remaining:
+      - '14'
+      X-Trace:
+      - 2B5CF58AB93B357972AEB9636E192D83C0F4B27424000000000000000000
+      Report-To:
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=qw%2FksL2qbzK9oizGS9oMHc1B3b4kYl%2B7n3tWh1e8v210ywav81Cgb7t%2Fe9Eq57T4iyjKjx9sQNZDmbQNPi%2BvXhRu7zT5DnnT8c2XwEk8vjupHwjkC2L%2FmkB8E3HiZWkR"}],"group":"cf-nel","max_age":604800}'
+      Nel:
+      - '{"success_fraction":0.01,"report_to":"cf-nel","max_age":604800}'
+      Server:
+      - cloudflare
+      Alt-Svc:
+      - h3=":443"; ma=86400, h3-29=":443"; ma=86400
+    body:
+      encoding: UTF-8
+      string: '{"vid":8801,"deleted":true,"reason":"OK"}'
+  recorded_at: Tue, 28 Feb 2023 14:26:30 GMT
+recorded_with: VCR 6.1.0

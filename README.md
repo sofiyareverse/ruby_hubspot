@@ -46,6 +46,44 @@ Hubspot.request
 ```
 you will get NoMethodError.
 
+## Hubspot Contacts
+
+There are some supported acctions for Contacts: :create_contact, :create_or_update_contact, :update_contact, :show_contact, :all_contacts, :delete_contact.
+
+After adding access token to 'hubspot' variable you can try actions mentioned above. For changing Contacts you could use either email or id.
+
+```ruby
+hubspot.all_contacts
+
+hubspot.create_contact(email: 'test@test.co')
+
+hubspot.create_or_update_contact(email: 'test@test.co', firstname: 'test')
+
+hubspot.show_contact(email: 'test@test.co')
+
+hubspot.update_contact(id: 9401, firstname: 'test')
+
+hubspot.delete_contact(id: 9351)
+```
+
+## Hubspot Companies
+
+There are some supported endpoints for Companies: :create_company, :update_company, :show_company, :all_companies, :delete_company.
+
+After adding access token to 'hubspot' variable you can try actions mentioned above. Companies require :id to make some action with them except :all_companies and :create_company. The last one needs either name or domain or both.
+
+```ruby
+hubspot.all_companies
+
+hubspot.create_company(domain: 'test.test.com', name: 'test')
+
+hubspot.update_company(id: '7107010539', name: 'test1')
+
+hubspot.show_company(id: '7107010539')
+
+hubspot.delete_company(id: '7107010539')
+```
+
 ## Contributing
 
 Bug reports and pull requests are welcome on GitHub at https://github.com/sofiyareverse/ruby_hubspot.

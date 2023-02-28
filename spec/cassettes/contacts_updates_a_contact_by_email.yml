@@ -1,0 +1,69 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://api.hubapi.com/contacts/v1/contact/email/test@test.co/profile
+    body:
+      encoding: UTF-8
+      string: '{"properties":[{"property":"email","value":"test@test.co"},{"property":"firstname","value":"test1"}]}'
+    headers:
+      Authorization:
+      - Bearer demo
+      Content-Type:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 204
+      message: No Content
+    headers:
+      Date:
+      - Tue, 28 Feb 2023 15:00:26 GMT
+      Connection:
+      - keep-alive
+      Cf-Ray:
+      - 7a0a07a1d95d1642-WAW
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains; preload
+      Vary:
+      - origin, Accept-Encoding
+      Cf-Cache-Status:
+      - DYNAMIC
+      Access-Control-Allow-Credentials:
+      - 'false'
+      X-Hubspot-Correlation-Id:
+      - 6570f1fb-a6d5-446f-9fe7-e6b589dcc241
+      X-Hubspot-Ratelimit-Daily:
+      - '500000'
+      X-Hubspot-Ratelimit-Daily-Remaining:
+      - '499953'
+      X-Hubspot-Ratelimit-Interval-Milliseconds:
+      - '10000'
+      X-Hubspot-Ratelimit-Max:
+      - '150'
+      X-Hubspot-Ratelimit-Remaining:
+      - '149'
+      X-Hubspot-Ratelimit-Secondly:
+      - '15'
+      X-Hubspot-Ratelimit-Secondly-Remaining:
+      - '14'
+      X-Trace:
+      - 2B9FCBD6E59EC7A256A161C1ED3CE304F1137FA295000000000000000000
+      Report-To:
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=OV3ET2p9%2BWh9pIvuOuYPzW%2BvA5JGjyk%2BEPSRQrlGV0EVSFGTREfKE%2BXQiKjeGQR5eUcpxOeBBeWrQblRgKMs8ZOPBwE5dXF7ChtQtltW1GBOSDMc%2F9QqEE%2FM59hMZRTs"}],"group":"cf-nel","max_age":604800}'
+      Nel:
+      - '{"success_fraction":0.01,"report_to":"cf-nel","max_age":604800}'
+      Server:
+      - cloudflare
+      Alt-Svc:
+      - h3=":443"; ma=86400, h3-29=":443"; ma=86400
+    body:
+      encoding: UTF-8
+      string: ''
+  recorded_at: Tue, 28 Feb 2023 15:00:26 GMT
+recorded_with: VCR 6.1.0

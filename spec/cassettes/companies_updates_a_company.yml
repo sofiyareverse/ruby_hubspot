@@ -1,0 +1,73 @@
+---
+http_interactions:
+- request:
+    method: put
+    uri: https://api.hubapi.com/companies/v2/companies/7107010539
+    body:
+      encoding: UTF-8
+      string: '{"properties":[{"name":"name","value":"test1"}]}'
+    headers:
+      Authorization:
+      - Bearer demo
+      Content-Type:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 28 Feb 2023 14:14:29 GMT
+      Content-Type:
+      - application/json;charset=utf-8
+      Content-Length:
+      - '624'
+      Connection:
+      - keep-alive
+      Cf-Ray:
+      - 7a09c45169fa35d5-WAW
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains; preload
+      Vary:
+      - origin, Accept-Encoding
+      Cf-Cache-Status:
+      - DYNAMIC
+      Access-Control-Allow-Credentials:
+      - 'false'
+      X-Hubspot-Correlation-Id:
+      - e0626623-4b14-4b34-b143-e44645c658c7
+      X-Hubspot-Ratelimit-Daily:
+      - '500000'
+      X-Hubspot-Ratelimit-Daily-Remaining:
+      - '499968'
+      X-Hubspot-Ratelimit-Interval-Milliseconds:
+      - '10000'
+      X-Hubspot-Ratelimit-Max:
+      - '150'
+      X-Hubspot-Ratelimit-Remaining:
+      - '148'
+      X-Hubspot-Ratelimit-Secondly:
+      - '15'
+      X-Hubspot-Ratelimit-Secondly-Remaining:
+      - '14'
+      X-Trace:
+      - 2B284574926977A6833C97FE711AC513B5FC104C34000000000000000000
+      Report-To:
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=Ou1YOvmM7PpaZLm3yu8eykhne6F3TuzwX7n86Iz0R23qwym1dyqMG%2BIPkkUgncxi3xnNz1xvKK365BU3tqEQLaaQygodIjtyCMAhANZWulNX16oU6bfKMtycNi3p8XZQ"}],"group":"cf-nel","max_age":604800}'
+      Nel:
+      - '{"success_fraction":0.01,"report_to":"cf-nel","max_age":604800}'
+      Server:
+      - cloudflare
+      Alt-Svc:
+      - h3=":443"; ma=86400, h3-29=":443"; ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: '{"portalId":26860844,"companyId":7107010539,"isDeleted":false,"properties":{"hubspot_owner_id":{"value":"687972083","timestamp":1677508241412,"source":"CRM_UI","sourceId":"userId:48789978","updatedByUserId":48789978,"versions":[{"name":"hubspot_owner_id","value":"687972083","timestamp":1677508241412,"sourceId":"userId:48789978","source":"CRM_UI","sourceVid":[],"requestId":"8865a077-ff91-4509-af17-8ed65a700332","updatedByUserId":48789978,"useTimestampAsPersistenceTimestamp":true}]},"hs_lastmodifieddate":{"value":"1677592843212","timestamp":1677592843212,"source":"INTEGRATION","sourceId":"1387894","updatedByUserId":null,"versions":[{"name":"hs_lastmodifieddate","value":"1677592843212","timestamp":1677592843212,"sourceId":"1387894","source":"INTEGRATION","sourceVid":[],"requestId":"03df341c-7f16-4399-92cc-a69d9b7afd94","useTimestampAsPersistenceTimestamp":true}]},"hubspot_owner_assigneddate":{"value":"1677508241412","timestamp":1677508241412,"source":"CRM_UI","sourceId":"userId:48789978","updatedByUserId":48789978,"versions":[{"name":"hubspot_owner_assigneddate","value":"1677508241412","timestamp":1677508241412,"sourceId":"userId:48789978","source":"CRM_UI","sourceVid":[],"requestId":"8865a077-ff91-4509-af17-8ed65a700332","updatedByUserId":48789978,"useTimestampAsPersistenceTimestamp":true}]},"hs_created_by_user_id":{"value":"48789978","timestamp":1677508241412,"source":"CRM_UI","sourceId":"userId:48789978","updatedByUserId":48789978,"versions":[{"name":"hs_created_by_user_id","value":"48789978","timestamp":1677508241412,"sourceId":"userId:48789978","source":"CRM_UI","sourceVid":[],"requestId":"8865a077-ff91-4509-af17-8ed65a700332","updatedByUserId":48789978,"useTimestampAsPersistenceTimestamp":true}]},"name":{"value":"test1","timestamp":1677592843212,"source":"INTEGRATION","sourceId":"1387894","updatedByUserId":null,"versions":[{"name":"name","value":"test1","timestamp":1677592843212,"sourceId":"1387894","source":"INTEGRATION","sourceVid":[],"requestId":"03df341c-7f16-4399-92cc-a69d9b7afd94","useTimestampAsPersistenceTimestamp":true}]},"hs_pipeline":{"value":"companies-lifecycle-pipeline","timestamp":1677508241412,"source":"CRM_UI","sourceId":"userId:48789978","updatedByUserId":48789978,"versions":[{"name":"hs_pipeline","value":"companies-lifecycle-pipeline","timestamp":1677508241412,"sourceId":"userId:48789978","source":"CRM_UI","sourceVid":[],"requestId":"8865a077-ff91-4509-af17-8ed65a700332","updatedByUserId":48789978,"useTimestampAsPersistenceTimestamp":true}]},"hs_object_id":{"value":"7107010539","timestamp":1677508241412,"source":"CRM_UI","sourceId":"userId:48789978","updatedByUserId":48789978,"versions":[{"name":"hs_object_id","value":"7107010539","timestamp":1677508241412,"sourceId":"userId:48789978","source":"CRM_UI","sourceVid":[],"requestId":"8865a077-ff91-4509-af17-8ed65a700332","updatedByUserId":48789978,"useTimestampAsPersistenceTimestamp":true}]},"createdate":{"value":"1677508241412","timestamp":1677508241412,"source":"CRM_UI","sourceId":"userId:48789978","updatedByUserId":48789978,"versions":[{"name":"createdate","value":"1677508241412","timestamp":1677508241412,"sourceId":"userId:48789978","source":"CRM_UI","sourceVid":[],"requestId":"8865a077-ff91-4509-af17-8ed65a700332","updatedByUserId":48789978,"useTimestampAsPersistenceTimestamp":true}]},"hs_all_owner_ids":{"value":"687972083","timestamp":1677508241412,"source":"CRM_UI","sourceId":"userId:48789978","updatedByUserId":48789978,"versions":[{"name":"hs_all_owner_ids","value":"687972083","timestamp":1677508241412,"sourceId":"userId:48789978","source":"CRM_UI","sourceVid":[],"requestId":"8865a077-ff91-4509-af17-8ed65a700332","updatedByUserId":48789978,"useTimestampAsPersistenceTimestamp":true}]},"lifecyclestage":{"value":"lead","timestamp":1677508241412,"source":"CRM_UI","sourceId":"userId:48789978","updatedByUserId":48789978,"versions":[{"name":"lifecyclestage","value":"lead","timestamp":1677508241412,"sourceId":"userId:48789978","source":"CRM_UI","sourceVid":[],"requestId":"8865a077-ff91-4509-af17-8ed65a700332","updatedByUserId":48789978,"useTimestampAsPersistenceTimestamp":true}]},"hs_user_ids_of_all_owners":{"value":"48789978","timestamp":1677508241412,"source":"CRM_UI","sourceId":"userId:48789978","updatedByUserId":48789978,"versions":[{"name":"hs_user_ids_of_all_owners","value":"48789978","timestamp":1677508241412,"sourceId":"userId:48789978","source":"CRM_UI","sourceVid":[],"requestId":"8865a077-ff91-4509-af17-8ed65a700332","updatedByUserId":48789978,"useTimestampAsPersistenceTimestamp":true}]},"hs_updated_by_user_id":{"value":"48789978","timestamp":1677508241412,"source":"CRM_UI","sourceId":"userId:48789978","updatedByUserId":48789978,"versions":[{"name":"hs_updated_by_user_id","value":"48789978","timestamp":1677508241412,"sourceId":"userId:48789978","source":"CRM_UI","sourceVid":[],"requestId":"8865a077-ff91-4509-af17-8ed65a700332","updatedByUserId":48789978,"useTimestampAsPersistenceTimestamp":true}]}},"additionalDomains":[],"stateChanges":[],"mergeAudits":[]}'
+  recorded_at: Tue, 28 Feb 2023 14:14:29 GMT
+recorded_with: VCR 6.1.0
