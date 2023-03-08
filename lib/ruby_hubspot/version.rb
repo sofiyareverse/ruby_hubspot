@@ -1,5 +1,7 @@
 # frozen_string_literal: true
 
+# Version module
 module RubyHubspot
-  VERSION = '1.0.1'
+  # gem version
+  VERSION = '1.0.2'
 end

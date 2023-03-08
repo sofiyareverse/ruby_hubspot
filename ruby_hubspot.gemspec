@@ -20,6 +20,7 @@ Gem::Specification.new do |spec|
 
   # Add development-only dependencies here
   spec.add_development_dependency('byebug')
+  spec.add_development_dependency('rdoc')
   spec.add_development_dependency('rspec')
   spec.add_development_dependency('rubocop')
   spec.add_development_dependency('vcr')
