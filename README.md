@@ -1,5 +1,7 @@
 # hubspot-ruby is a wrapper for the HubSpot REST API
 
+[![Gem Version](https://badge.fury.io/rb/ruby_hubspot.svg)](https://badge.fury.io/rb/ruby_hubspot)
+
 [![Build Status](https://app.travis-ci.com/sofiyareverse/ruby_hubspot.svg?branch=main)](https://app.travis-ci.com/sofiyareverse/ruby_hubspot)
 
 ## Installation
