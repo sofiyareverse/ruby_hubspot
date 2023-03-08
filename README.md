@@ -1,3 +1,7 @@
+# hubspot-ruby is a wrapper for the HubSpot REST API
+
+[![Build Status](https://app.travis-ci.com/sofiyareverse/ruby_hubspot.svg?branch=main)](https://app.travis-ci.com/sofiyareverse/ruby_hubspot)
+
 ## Installation
 
 Install the gem and add to the application's Gemfile by executing:
