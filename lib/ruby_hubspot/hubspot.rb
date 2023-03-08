@@ -6,7 +6,7 @@ require_relative 'constants'
 require_relative 'contacts'
 require_relative 'companies'
 
-# Hubspot main
+# Hubspot main controls and regulate all methods and constants
 class Hubspot
   include ErrorHandler
   include Constants
@@ -15,10 +15,12 @@ class Hubspot
 
   attr_accessor :access_token
 
+  # initializes Hubspot with access token
   def initialize(access_token:)
     @access_token = access_token
   end
 
+  # sends a request to Hubspot with access token and params
   def request(http_method, path, **params)
     validate_access_token
 
