@@ -1,4 +1,7 @@
 language: ruby
+cache:
+  - bundler
+before_install:
+  - gem install bundler
 rvm:
- - 2.2
- - jruby
+  - 2.5
