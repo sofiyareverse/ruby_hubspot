@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    ruby_hubspot (1.0.1)
+    ruby_hubspot (1.0.2)
       faraday
       rake
 
